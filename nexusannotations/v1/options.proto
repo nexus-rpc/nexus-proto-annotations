@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package nexus.v1;
+package nexusannotations.v1;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/bergundy/nexus-proto-annotations/go/nexus/v1";
+option go_package = "github.com/nexus-rpc/nexus-proto-annotations/go/nexusannotations/v1";
 
 extend google.protobuf.ServiceOptions {
   optional ServiceOptions service = 8233;

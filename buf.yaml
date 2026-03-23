@@ -1,6 +1,6 @@
 version: v2
 modules:
-  - name: buf.build/bergundy/nexus
+  - name: buf.build/nexus-rpc/nexusannotations
     path: .
 lint:
   use:

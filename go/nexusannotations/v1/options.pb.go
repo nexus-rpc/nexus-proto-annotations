@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: nexus/v1/options.proto
+// source: nexusannotations/v1/options.proto
 
-package nexusv1
+package nexusannotationsv1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -135,29 +135,29 @@ var file_nexus_v1_options_proto_extTypes = []protoimpl.ExtensionInfo{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
 		ExtensionType: (*ServiceOptions)(nil),
 		Field:         8233,
-		Name:          "nexus.v1.service",
+		Name:          "nexusannotations.v1.service",
 		Tag:           "bytes,8233,opt,name=service",
-		Filename:      "nexus/v1/options.proto",
+		Filename:      "nexusannotations/v1/options.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.MethodOptions)(nil),
 		ExtensionType: (*OperationOptions)(nil),
 		Field:         8234,
-		Name:          "nexus.v1.operation",
+		Name:          "nexusannotations.v1.operation",
 		Tag:           "bytes,8234,opt,name=operation",
-		Filename:      "nexus/v1/options.proto",
+		Filename:      "nexusannotations/v1/options.proto",
 	},
 }
 
 // Extension fields to descriptorpb.ServiceOptions.
 var (
-	// optional nexus.v1.ServiceOptions service = 8233;
+	// optional nexusannotations.v1.ServiceOptions service = 8233;
 	E_Service = &file_nexus_v1_options_proto_extTypes[0]
 )
 
 // Extension fields to descriptorpb.MethodOptions.
 var (
-	// optional nexus.v1.OperationOptions operation = 8234;
+	// optional nexusannotations.v1.OperationOptions operation = 8234;
 	E_Operation = &file_nexus_v1_options_proto_extTypes[1]
 )
 
@@ -172,9 +172,9 @@ const file_nexus_v1_options_proto_rawDesc = "" +
 	"\x0eServiceOptions\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
 	"\x04tags\x18\x02 \x03(\tR\x04tags:W\n" +
-	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\xa9@ \x01(\v2\x18.nexus.v1.ServiceOptionsR\aservice\x88\x01\x01:\\\n" +
-	"\toperation\x12\x1e.google.protobuf.MethodOptions\x18\xaa@ \x01(\v2\x1a.nexus.v1.OperationOptionsR\toperation\x88\x01\x01B\x9e\x01\n" +
-	"\fcom.nexus.v1B\fOptionsProtoP\x01Z?github.com/bergundy/nexus-proto-annotations/go/nexus/v1;nexusv1\xa2\x02\x03NXX\xaa\x02\bNexus.V1\xca\x02\bNexus\\V1\xe2\x02\x14Nexus\\V1\\GPBMetadata\xea\x02\tNexus::V1b\x06proto3"
+	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\xa9@ \x01(\v2\x18.nexusannotations.v1.ServiceOptionsR\aservice\x88\x01\x01:\\\n" +
+	"\toperation\x12\x1e.google.protobuf.MethodOptions\x18\xaa@ \x01(\v2\x1a.nexusannotations.v1.OperationOptionsR\toperation\x88\x01\x01B\x9e\x01\n" +
+	"\fcom.nexus.v1B\fOptionsProtoP\x01Z?github.com/nexus-rpc/nexus-proto-annotations/go/nexusannotations/v1;nexusv1\xa2\x02\x03NXX\xaa\x02\bNexus.V1\xca\x02\bNexus\\V1\xe2\x02\x14Nexus\\V1\\GPBMetadata\xea\x02\tNexus::V1b\x06proto3"
 
 var (
 	file_nexus_v1_options_proto_rawDescOnce sync.Once
@@ -190,16 +190,16 @@ func file_nexus_v1_options_proto_rawDescGZIP() []byte {
 
 var file_nexus_v1_options_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_nexus_v1_options_proto_goTypes = []any{
-	(*OperationOptions)(nil),            // 0: nexus.v1.OperationOptions
-	(*ServiceOptions)(nil),              // 1: nexus.v1.ServiceOptions
+	(*OperationOptions)(nil),            // 0: nexusannotations.v1.OperationOptions
+	(*ServiceOptions)(nil),              // 1: nexusannotations.v1.ServiceOptions
 	(*descriptorpb.ServiceOptions)(nil), // 2: google.protobuf.ServiceOptions
 	(*descriptorpb.MethodOptions)(nil),  // 3: google.protobuf.MethodOptions
 }
 var file_nexus_v1_options_proto_depIdxs = []int32{
-	2, // 0: nexus.v1.service:extendee -> google.protobuf.ServiceOptions
-	3, // 1: nexus.v1.operation:extendee -> google.protobuf.MethodOptions
-	1, // 2: nexus.v1.service:type_name -> nexus.v1.ServiceOptions
-	0, // 3: nexus.v1.operation:type_name -> nexus.v1.OperationOptions
+	2, // 0: nexusannotations.v1.service:extendee -> google.protobuf.ServiceOptions
+	3, // 1: nexusannotations.v1.operation:extendee -> google.protobuf.MethodOptions
+	1, // 2: nexusannotations.v1.service:type_name -> nexusannotations.v1.ServiceOptions
+	0, // 3: nexusannotations.v1.operation:type_name -> nexusannotations.v1.OperationOptions
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	2, // [2:4] is the sub-list for extension type_name

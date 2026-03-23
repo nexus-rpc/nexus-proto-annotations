@@ -10,18 +10,18 @@ Add a dependency to your `buf.yaml` file:
 
 ```
 deps:
-  - buf.build/bergundy/nexus
+  - buf.build/nexus-rpc/nexusannotations
 ```
 
 ### Unmanaged
 
-Copy the `nexus` directory from this repository and include it as one of the sources to `protoc`.
+Copy the `nexusannotations` directory from this repository and include it as one of the sources to `protoc`.
 
 ## Usage
 
 ### Service
 
-#### (nexus.v1.service).name
+#### (nexusannotations.v1.service).name
 
 `string`
 
@@ -34,14 +34,14 @@ syntax = "proto3";
 
 package example.v1;
 
-import "nexus/v1/options.proto";
+import "nexusannotations/v1/options.proto";
 
 service ExampleService {
-  option (nexus.v1.service).name = "example.v1.Example";
+  option (nexusannotations.v1.service).name = "example.v1.Example";
 }
 ```
 
-#### (nexus.v1.service).tags
+#### (nexusannotations.v1.service).tags
 
 `repeated string`
 
@@ -54,17 +54,17 @@ syntax = "proto3";
 
 package example.v1;
 
-import "nexus/v1/options.proto";
+import "nexusannotations/v1/options.proto";
 
 service ExampleService {
-  option (nexus.v1.service).tags = "tag1";
-  option (nexus.v1.service).tags = "tag2";
+  option (nexusannotations.v1.service).tags = "tag1";
+  option (nexusannotations.v1.service).tags = "tag2";
 }
 ```
 
 ### Method
 
-#### (nexus.v1.operation).name
+#### (nexusannotations.v1.operation).name
 
 `string`
 
@@ -77,16 +77,16 @@ syntax = "proto3";
 
 package example.v1;
 
-import "nexus/v1/options.proto";
+import "nexusannotations/v1/options.proto";
 
 service ExampleService {
   rpc Foo(FooInput) returns (FooResponse) {
-	option (nexus.v1.operation).name = "foo";
+	option (nexusannotations.v1.operation).name = "foo";
   }
 }
 ```
 
-#### (nexus.v1.operation).tags
+#### (nexusannotations.v1.operation).tags
 
 `repeated string`
 
@@ -99,12 +99,12 @@ syntax = "proto3";
 
 package example.v1;
 
-import "nexus/v1/options.proto";
+import "nexusannotations/v1/options.proto";
 
 service ExampleService {
   rpc Foo(FooInput) returns (FooResponse) {
-	option (nexus.v1.operation).tags = "tag1";
-	option (nexus.v1.operation).tags = "tag2";
+	option (nexusannotations.v1.operation).tags = "tag1";
+	option (nexusannotations.v1.operation).tags = "tag2";
   }
 }
 ```
