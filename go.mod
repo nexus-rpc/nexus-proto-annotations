@@ -1,5 +1,5 @@
-module github.com/bergundy/nexus-proto-annotations
+module github.com/nexus-rpc/nexus-proto-annotations
 
-go 1.23.4
+go 1.25.4
 
 require google.golang.org/protobuf v1.36.1
