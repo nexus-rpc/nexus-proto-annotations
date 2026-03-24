@@ -4,7 +4,7 @@ managed:
   enabled: true
   override:
   - file_option: go_package_prefix
-    value: github.com/bergundy/nexus-proto-annotations/go
+    value: github.com/nexus-rpc/nexus-proto-annotations/go
 plugins:
   - remote: buf.build/protocolbuffers/go
     out: go
