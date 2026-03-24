@@ -1,6 +1,6 @@
 version: v2
 modules:
-  - name: buf.build/nexus-rpc/nexusannotations
+  - name: buf.build/nexus-rpc/nexus-proto-annotations
     path: .
 lint:
   use:
