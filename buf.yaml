@@ -1,6 +1,6 @@
 version: v1
 modules:
-  - name: buf.build/nexus-rpc/nexus-proto-annotations
+  - name: buf.build/temporalio/nexus-annotations
     path: .
 lint:
   use:
